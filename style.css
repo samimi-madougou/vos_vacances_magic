@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image:linear-gradient(rgba(184, 201, 209, 0.6), rgba(0, 0, 0, 0.6)), url(./img/01.jpg); /* linear-gardient permet de mettrer un fond a l'image*/
+    height: 100vh; /* prendre 100 % de la page */
+   background-size: cover;  /* pour eviter que l'image se multiplie */
+   background-position:center ;/* centrer l'image */
+}
+.logo a{
+    color: #fff; /*couleur du texte*/
+    padding: 0px 20px;/* espace interieur*/
+    border: 2px solid #fff;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    text-transform: capitalize;/* mettrer le texte en majucule*/
+    text-decoration: none;/* anuller la ligne qui est souligner*/
+    font-weight: 600;
+}
+.logo span{
+    color:red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+ul{
+    list-style: none;
+    float: right;/* ramener la listes non ordoner à gauche*/
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border:2px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;/*6 second pour la mise en place  */
+}
+ul li a:hover{
+    background-color: aliceblue;
+    color: black;
+/* au survole */
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: black;
+}
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+
+}
+.titre{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.titre h1{
+    color: #fff;
+    /* text-transform: capitalize; */
+    font-weight: bold;
+    font-size: 70px;
+}
+.bouton{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bouton a{
+    color:#fff;
+    text-decoration: none;
+    border:2px solid #fff;
+    padding:10px 20px;
+}
+.btn{
+    transition: 0.6s ease;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
